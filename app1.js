@@ -83,6 +83,7 @@
 // var s2 = String.fromCharCode(44);
 // var s3 = String.fromCharCode(46);
 // var s4 = String.fromCharCode(64);
+// document.write(username);
 // for (let i = 0; i < username.length; i++) {
 //     if (username[i] === s1 || username[i] === s2 || username[i] === s3 || username[i] === s4) {
 //         alert('Enter a valid Username');
@@ -253,7 +254,7 @@
 // === Task# 5
 // var current = new Date();
 // var date = current.getDate();
-// if (date >= 15) {
+// if (date <= 15) {
 //     document.write('First fifteen days of the Month')
 // } else {
 //     document.write('Last days of the Month')
@@ -288,7 +289,7 @@
 // var diffTime = Math.abs(current - ramadan);
 // var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
 // console.log(diffTime + " milliseconds");
-// document.write(diffDays + " days since 1st Ramadan, 2020")
+// document.write(diffDays + " days have passed since 1st Ramadan, 2020")
 
 
 // === Task# 10
@@ -367,7 +368,6 @@
 //     return addition;
 // }
 // add()
-
 
 
 // === Task# 4
@@ -514,5 +514,6 @@
 //     return 'The area is ' + area + ' cm<sup>2</sup>.';
 // }
 // document.write(calcCircumference(radius) + '<br>' + calcArea(radius))
+
 
 
