@@ -140,9 +140,9 @@
         <input type="text" id="first-name">
         <label for="class-name">Class Name: </label>
         <input type="text" id="class-name">
-        <input type="button" value="Submit" onclick="submit()">
+        <input type="button" value="Submit" onclick="submited()">
     </form>
-    <table id="myTable">
+    <table id="tables" style="display: none;">
         <tr>
             <td>Index</td>
             <td>Name</td>
@@ -150,7 +150,33 @@
         </tr>
     </table>
     <script>
-        
+        var table = document.getElementById("tables");
+        var count = 0;
+        var x,y,index,name,classNo,add,del;
+        var fname = document.getElementById("first-name");
+        var cname = document.getElementById("class-name");
+        var iD = "tr"+count;
+function submited() {
+    count +=1;
+    table.style.display = "block";
+    var row = table.insertRow(count);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+    cell1.innerHTML = count;
+    cell2.innerHTML = fname.value;
+    cell3.innerHTML = cname.value;
+    add = document.createElement('button');
+    del = document.createElement('button');
+    addVal = document.createTextNode('Edit');
+    delVal = document.createTextNode('Delete');
+    add.appendChild(addVal);
+    del.appendChild(delVal);
+    cell4.append(add);
+    cell5.append(del);
+}
     </script>
     <!-- <table id="table">
         <tr>
