@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<style>
+div{
+  text-align: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4)
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+img{
+    height: 125px;
+    width: 200px;
+}
+</style>
+<body>
+<div>
+  <img src="8.jpg" alt="" id="img1" onclick="myFunction(this)">
+  <img src="10.jpg" alt="" id="img2" onclick="myFunction(this)">
+  <img src="12.jpg" alt="" id="img3" onclick="myFunction(this)">
+  <img src="13.jpg" alt="" id="img4" onclick="myFunction(this)">
+
+  <div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" id="myModal">
+      <span class="close">&times;</span>
+      <img id="img">
+    </div>
+
+  </div>
+</div>
+
+<script>
+var modal = document.getElementById("modal");
+var img1 = document.getElementById("img1");
+var img2 = document.getElementById("img2");
+var img3 = document.getElementById("img3");
+var img4 = document.getElementById("img4");
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function myFunction(object) {
+  modal.style.display = "block";
+  var img = document.getElementById("img");
+  img.src = document.getElementById(object.id).src;
+  img.style.width = "600px";
+  img.style.height = "400px";
+}
+
+
+
+
+</script>
+
+</body>
+</html>

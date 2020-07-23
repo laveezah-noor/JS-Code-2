@@ -1,103 +1,842 @@
-// ====== Chapter# 21-25
+// document.write('<h4>Alerts</h4>')
 
-// === Task# 1
-// var firstName = prompt('Enter Your First Name:');
-// var lastName = prompt('Enter Your Last Name:');
-// var fullName = firstName + ' ' + lastName;
-// alert('Welcome!' + ' ' +fullName);
+//1.
+// alert("Hello! Welcome To Our Website");
 
 
-// === Task# 2
-// var phone = prompt('Enter Your Favourite Mobile Phone:');
-// document.write('My favourite phone is: ' + phone + '<br>' + 'Length of string: ' + phone.length);
+//2.
+// alert("Error! Please enter a valid password.")
 
 
-// === Task# 3
-// var str = 'Pakistani';
-// var index = str.indexOf('n');
-// document.write('String: ' + str);
-// document.write("<br>Index of 'n': " + index);
+//3.
+// alert("Welcome to JS Land... \n Happy Coding!")
 
 
-// === Task# 4
-// var str = 'Hello World';
-// var index = str.lastIndexOf('l');
-// document.write('String: ' + str);
-// document.write("<br>" + "Last index of 'l': " + index);
+//4.
+// alert("Hello! Welcome To JS Land...");
+// alert("Happy Coding!");
 
 
-// === Task# 5
-// var str = 'Pakistani';
-// var char = str.charAt(3);
-// document.write('String: ' + str);
-// document.write('<br>' + 'Character at index 3: ' + char);
+//5.
+// var a = alert("Hello... I can run JS through my web browser's console")
+// console.log(a)
 
 
-// === Task# 6
-// var firstName = prompt('Enter Your First Name:');
-// var lastName = prompt('Enter Your Last Name:');
-// var fullName = firstName.concat(' ',lastName);
-// alert('Welcome!' + ' ' +fullName);
+// document.write('<h4>Variable For Strings</h4>')
+
+//1. 
+// var username;
 
 
-// === Task# 7
-// var city = 'Hyderabad';
-// document.write('City: ' + city);
-// var newCity = city.replace('Hyder','Islam');
-// document.write('<br>' + 'After replacement: ' + newCity);
+//2.
+// var myName;
+// myName = "Laveezah Noor";
 
 
-// === Task# 8
-// var message = 'Ali and Sami are best friends. They play cricket and football together.';
-// var message = message.replace(/and/g,'&');
-// document.write(message);
+//3. 
+// var message;
+// message = "Hello World";
+// alert(message);
 
 
-// === Task# 9
-// var value = '472';
-// document.write('Value: ' + value + '<br>' + 'Type: ' + typeof(value));
-// var nvalue = Number(value);
-// document.write('<br>' + 'Value: ' + nvalue + '<br>' + 'Type: ' + typeof(nvalue));
+//4.
+// var name = "Jhone Doe";
+// var age = "15 years old";
+// var work ="Certified Mobile Application Development";
+// alert(name);
+// alert(age);
+// alert(work);
 
 
-// === Task# 10
-// var input = prompt('Enter:');
-// document.write('User input: ' + input + '<br>');
-// document.write('User input: ' + input.toUpperCase() + '<br>');
+//5.
+// var food = "Pizza";
+// var text = food;
+// var a = food.length;
+// console.log(a);
+// for(var i = 0; i <= a+1; i++) {
+//     var c = food.slice(0,a-1);
+//     text += "\n" + c;
+//     a = --a
+// }
+// alert(text)
 
 
-// === Task# 11
-// var input = prompt('Enter:');
-// document.write('User input: ' + input + '<br>');
-// document.write('User input: ' + input[0].toLocaleUpperCase() + input.slice(1) + '<br>');
+// 6.
+// var email = 'example@gmail.com';
+// alert('My email address is ' + email);
 
 
-// === Task# 12
-// var num = 35.36
-// document.write('Number: ' + num + '<br>' + 'Result: ' + num*10*10 );
+// 7.
+// var book = 'A smarter way to learn JavaScript';
+// alert('I am trying to learn from the Book ' + book);
 
 
-// === Task# 13
-// var username = prompt('Enter Username:');
-// var s1 = String.fromCharCode(33);
-// var s2 = String.fromCharCode(44);
-// var s3 = String.fromCharCode(46);
-// var s4 = String.fromCharCode(64);
-// document.write(username);
-// for (let i = 0; i < username.length; i++) {
-//     if (username[i] === s1 || username[i] === s2 || username[i] === s3 || username[i] === s4) {
-//         alert('Enter a valid Username');
+// 8.
+// document.write('Yah! I can write HTML content through JavaScript')
+
+
+
+// 9.
+// var symbols = '▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬';
+// alert(symbols);
+// document.write(symbols);
+
+
+
+
+
+
+// document.write('<h4>Variable For Numbers</h4>')
+
+// 1. 
+// var age;
+// age =  18;
+// alert("I am "+ age + " years old")
+
+
+// 2.
+// var noVisited = 14
+// alert("You have visited this site " + noVisited + " times.")
+
+
+// 3.
+// var birthYear = 2002;
+// document.write("My birth year is " + birthYear + "<br>");
+// document.write("Data type of my declared variable is number")
+
+
+// 4.
+// vName = "John Doe";
+// pTitle = " T-shirts";
+// quantity = 5;
+// document.write(vName + " ordered " + quantity + pTitle + " on XYZ Clothing store.")
+
+
+
+
+
+// document.write('<h4>Variable Names: Legal & Illegal</h4>')
+
+
+// 1. 
+// var a, b, c;
+
+
+// 2.
+// var alert, console, for, document, if;
+// var hello, world, doe, hagrid, albus;
+
+
+// 3. 
+// document.write("<br><h5>Rules for naming JS variables</h5>")
+// document.write("Variable names can only contains numbers, $, letters and _.<br>For example $my_1stVariable <br>Variables must begin with a letter,$ or_.<br> For example $name, _name or name.<br> Variable names are case sensitive.<br> Variable names should not be JS keywords.");
+
+
+
+
+
+// document.write('<h4>Math Expression</h4>')
+
+
+// 1
+// Addition
+// var firstNo = +prompt("Enter first Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// var total = firstNo + secondNo ;
+// document.write("Sum of " +firstNo + " and " + secondNo + " is " + total);
+
+
+// 2
+// // Subtraction
+// var firstNo = +prompt("Enter first Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// var total = firstNo - secondNo ;
+// document.write("Subtraction of " +firstNo + " and " + secondNo + " is " + total);
+// // Multiplication
+// var firstNo = +prompt("Enter first Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// var total = firstNo * secondNo ;
+// document.write("Multiplication of " +firstNo + " and " + secondNo + " is " + total);
+// // Division
+// var firstNo = +prompt("Enter first Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// var total = firstNo / secondNo ;
+// document.write("Division of " +firstNo + " and " + secondNo + " is " + total);
+// // Modulus
+// var firstNo = +prompt("Enter first Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// var total = firstNo % secondNo ;
+// document.write("Modulus of " +firstNo + " and " + secondNo + " is " + total);
+
+
+// 3
+// var a;
+// document.write("Value after variable declaration is: ??<br>");
+// a = 8;
+// document.write("Initial value: " + a );
+// a++;
+// document.write("<br>Value after increment is: " + a);
+// a = a+7;
+// document.write("<br>Value after addition is: " + a);
+// a--;
+// document.write("<br>Value after decrement is: " + a);
+// a = a%3;
+// document.write("<br>The remainder is: " + a)
+
+
+// 4
+// var ticketPrice = 600;
+// var totalTickets = 5;
+// document.write("Total cost to buy " + totalTickets + " tickets to a movie is " + ticketPrice*totalTickets + "PKR.")
+
+// 5
+
+// var table = 4;
+// document.write("Table of " + table)
+// document.write("<br>" + table + " x 1 = " + table*1 + "<br>" + table + " x 2 = " + table*2 +"<br>" + table + " x 3 = " + table*3 + "<br>" + table + " x 4 = " + table*4 + "<br>" + table + " x 5 = " + table*5 + "<br>" + table + " x 6 = " + table*6 + "<br>" + table + " x 7 = " + table*7 + "<br>" + table + " x 8 = " + table*8 + "<br>" + table + " x 9 = " + table*9 + "<br>" + table + " x 10 = " + table*10)
+
+
+// 6
+// var celsius = 25;
+// var farenheit = (celsius*(9/5))+32;
+// document.write(celsius + "<sup>o</sup>C is " + farenheit + "<sup>o</sup>F<br>");
+// farenheit = 70;
+// celsius = (farenheit-32)*(5/9);
+// document.write(farenheit + "<sup>o</sup>C is " + celsius + "<sup>o</sup>C");
+
+
+// 7.
+// document.write('<h5>Shopping Cart</h5>')
+// var item1 = 650;
+// var item2 = 100;
+// var quantity1 = 3;
+// var quantity2 = 7;
+// var shipping = 100;
+// document.write("Price of Item 1 is " + item1);
+// document.write("<br>Quantity of item 1 is " +  quantity1);
+// document.write("<br>Price of Item 2 is " + item2)
+// document.write("<br>Quantity of item 2 is " +  quantity2);
+// document.write("<br>Shipping Charges are " + shipping);
+// var total = item1*quantity1+item2*quantity2+shipping ;
+// document.write("<br>Total cost of your order is " + total);
+
+
+// 8.
+// document.write('<h5>Marks Sheet</h5>')
+// var totalMarks = 980;
+// var obtainedMarks = 804;
+// var percentage = (obtainedMarks/totalMarks)*100;
+// document.write("<br>Total Marks:" + totalMarks);
+// document.write("<br>Marks obtained: " + obtainedMarks);
+// document.write("<br>Percentage: " + percentage);
+
+
+// 9.
+// document.write('<h5>Currency in PKR</h5>')
+// var dollars = 10;
+// var riyal = 25;
+// var pkr = dollars*104.80+riyal*28;
+// document.write("Total Currency in PKR: " + pkr);
+
+
+// 10
+// var number = 6;
+// result = ((number+5)*10)/2;
+// document.write("Result: " + result);
+
+
+// 11.
+// document.write('<h5>Age Calculator</h5>')
+// var currentYear = 2020;
+// var birthYear = 2002;
+// var age = currentYear-birthYear;
+// document.write("Current Year: " + currentYear);
+// document.write("<br>Birth Year: " + birthYear);
+// document.write("<br>Your Age is " + age);
+
+
+// 12.
+// document.write('<h5>The Geometrizer</h5>')
+// var radius = 20;
+// var circumference = 2*3.142*radius;
+// var area = 3.142*(radius**2);
+// document.write("<br>Radius of a circle: " + radius);
+// document.write("<br>The circumference is: " + circumference);
+// document.write("<br>The area is: " + area);
+
+
+// 13.
+// document.write('<h5>The Lifetime Supply Calculator</h5>')
+// var favSnack = "Chocolate";
+// var currentAge = 18;
+// var maxAge = 65;
+// var perSnack = 3;
+// var totalSnacks = (maxAge-currentAge)*3;
+// document.write("<br> Favourite Snack:" + favSnack);
+// document.write("<br> Current age:" + currentAge);
+// document.write("<br>Estimated Maximum Age: " + maxAge);
+// document.write("<br>Amount of snack per day: " + perSnack);
+// document.write("<br>You will need " + totalSnacks);
+
+
+
+
+// document.write('<h4>Math Expression Part 2</h4>')
+
+
+// 1
+// var a = 10;
+// document.write("<br>Result:")
+// document.write("<br>The value of a is: " + a);
+// document.write("<br>.............................................")
+// document.write("<br><br>The value of ++a is: " + ++a);
+// document.write("<br>Now the value of a is: " + a);
+// document.write("<br><br>The value of a++ is: " + a++);
+// document.write("<br>Now the value of a is: " + a);
+// document.write("<br><br>The value of --a is: " + --a);
+// document.write("<br>Now the value of a is: " + a);
+// document.write("<br><br>The value of a-- is: " + a--);
+// document.write("<br>Now the value of a is: " + a);
+
+
+// 2
+// var a = 2, b = 1;
+// document.write("<br>a is " + a + "<br>b is " + b);
+// var result = --a - --b + ++b + b--;
+// document.write("<br>result is " + result);
+
+
+// 3
+// var username = prompt("Enter Username:")
+// document.write("Welcome " + username )
+
+
+// 5
+// var table = 5;
+// table = +prompt("Enter a number:");
+// if( table ===0){
+//     table = 5;
+// }
+// document.write("Table of " + table);
+// document.write("<br>" + table + " x 1 = " + table*1 + "<br>" + table + " x 2 = " + table*2 +"<br>" + table + " x 3 = " + table*3 + "<br>" + table + " x 4 = " + table*4 + "<br>" + table + " x 5 = " + table*5 + "<br>" + table + " x 6 = " + table*6 + "<br>" + table + " x 7 = " + table*7 + "<br>" + table + " x 8 = " + table*8 + "<br>" + table + " x 9 = " + table*9 + "<br>" + table + " x 10 = " + table*10);
+
+
+// 6
+// var subject1, subject2, subject3;
+// subject1 = prompt("Enter a Subject name:");
+// subject2 = prompt("Enter a Subject name:");
+// subject3 = prompt("Enter a Subject name:");
+// var totalMarks = 100;
+// var obMarks1 = +prompt("Enter Obatained Marks of 1st Subject:");
+// var obMarks2 = +prompt("Enter Obatained Marks of 2nd Subject:");
+// var obMarks3 = +prompt("Enter Obatained Marks of 3rd Subject:");
+// var percentage1 = (obMarks1/totalMarks)* 100;
+// var percentage2 = (obMarks2/totalMarks)* 100;
+// var percentage3 = (obMarks3/totalMarks)* 100;
+// var obMarks = obMarks1+obMarks2+obMarks3;
+// var percentage = obMarks/300*100;
+// document.write('<table><tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr><tr><td>' + subject1 + '</td><td>' + totalMarks + '</td><td>' + obMarks1 + '</td><td>' + percentage1 + '%' + '</td></tr><tr><td>' + subject2 + '</td><td>' + totalMarks + '</td><td>' + obMarks2 + '</td><td>' + percentage2 + '%' + '</td></tr><tr><td>' + subject3 + '</td><td>' + totalMarks + '</td><td>' + obMarks3 + '</td><td>' + percentage3 + '%' + '</td></tr><tr><td></td><th>' + totalMarks*3 + '</th><th>' + obMarks + '</th><th>' + percentage + '%' + '</th></tr></table>')
+
+
+
+
+// document.write('<h4>User Input</h4>')
+
+// 1
+// var city = prompt("Enter a City name:");
+// if (city === "Karachi" || "karachi"){
+//     document.write("Welcome to the City of Lights!");
+// }
+
+
+// 2
+// var userGender = prompt("Enter your gender:");
+// if (userGender === "male" || userGender === "Male") {
+//     alert("Good Morning Sir.");
+// } 
+//  else if (userGender === "female" || userGender === "Female") {
+//     alert("Good Morning Ma'am.");
+// }
+//  else {
+//     userGender = alert("Please enter your gender.");
+// }
+
+
+// 3
+// var trafficSignal = prompt("Enter Traffic Signal Colour:");
+// if (trafficSignal === "Red" || trafficSignal === "red"){
+//     alert("Must Stop");
+// } else if (trafficSignal === "Green" || trafficSignal === "green") {
+//     alert("Move now");
+// } else if (trafficSignal === "yellow" || trafficSignal === "Yellow") {
+//     alert("Ready to move");   
+// } else{
+//     trafficSignal = alert("Please Enter the colour of Traffic Signal");
+// }
+
+
+// 4
+// var fuel = +prompt("Enter Remaining Fuel in litres:");
+// if (fuel < "0.25") {
+//     alert("Please refill the fuel in your car");
+// }
+
+// 5
+
+// a.
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// }
+// Displayed
+
+// b.
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// }
+//Not displayed
+
+// c.
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// }
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// }
+// 2 and 4 condition Displayed
+
+// d.
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// }
+// Displayed
+
+// e.
+// if (true){
+// alert("True");
+// }
+// if (false){
+// alert("False");
+// }
+// True Displayed
+
+// f.
+// if("car" < "cat"){
+// alert("car is smaller than cat");
+// }
+// Displayed
+
+
+// 6.
+// document.write('<h5>Marksheet</h5>')
+// var obtainedMarks = +prompt("Enter Obtained Marks of 3 Subjects:");
+// var totalMarks = +prompt("Enter Total marks of 3 Subjects:");
+// var percentage = obtainedMarks/totalMarks * 100;
+// document.write("<br>Total marks : " + totalMarks + "<br>Marks obtained : " + obtainedMarks + "<br>Percentage : " + percentage + "%")
+// if (percentage === 80 || percentage > 80) {
+//     document.write("<br>Grade : A-one <br>Remarks : Excellent");
+// } else if (percentage === 70 || percentage > 70) {
+//     document.write("<br>Grade : A <br>Remarks : Good" );
+// } else if (percentage === 60 || percentage > 60) {
+//     document.write("<br>Grade : B <br>Remarks : You need to improve" );
+// } else if ( percentage < 60) {
+//     document.write("<br>Grade : Fail <br>Remarks : Sorry" );
+// } else {
+//     alert("Input error")
+// }
+
+
+
+// 7.
+// var secretNo = 8;
+// var guess = +prompt("Guess the Number from 1-10:");
+// if (secretNo === guess) {
+//     alert("Bingo! Correct answer")
+// } else if (++guess === secretNo) {
+//     alert("Close enough to the correct answer")
+// } else {
+//     alert("Try Again!")
+// }
+
+
+// 8
+// var number = +prompt("Enter a Number:");
+// if (number%3 === 0) {
+//     alert("The number is divisible by 3");
+// }
+
+
+
+// 9
+// var number = +prompt("Enter a number:");
+// if (number%2 ===0) {
+//     alert("The Number is Even.")
+// } else {
+//     alert("The Number is Odd.")
+// }
+
+
+// 10
+// var temperature = +prompt("Enter the temperature:");
+// if (temperature > 40) {
+//     alert("It is too hot outside.")
+// } else if (temperature > 30) {
+//     alert("The weather today is normal.")
+// } else if (temperature > 20) {
+//     alert("Today's weather is cool.")
+// } else if (temperature > 10 || temperature <10) {
+//     alert("OMG! Today's weather is so cool.")
+// }
+
+
+// 11.
+// var firstNo = +prompt("Enter First Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// var operator = prompt("Enter Operator:");
+// var result;
+// if (operator === "+") {
+//     result = firstNo+secondNo;
+// } else if (operator === "-") {
+//     result = firstNo-secondNo;
+// } else if (operator === "*") {
+//     result = firstNo*secondNo;
+// } else if (operator === "/") {
+//     result = firstNo/secondNo;
+// } else if (operator === "%") {
+//     result = firstNo%secondNo;
+// } else {
+//  alert("Invalid input");   
+// }
+// document.write("<br>First Number: " + firstNo + "<br>Second Number: " + secondNo + "<br>Result: " + result);
+
+
+
+
+// document.write('<h4>Conditions</h4>')
+
+// 1.
+// var char = prompt("Enter a chatacter:");
+// var check = char.charCodeAt(0);
+// if (check >= 65 && check <= 90) {
+//     alert('The Character is a Uppercase Letter.');
+// } else if (check >= 97 && check <= 122) {
+//     alert('The Character is a Lowercase Letter.');
+// } else if (check >= 48 && check <= 57) {
+//     alert('The Character is a Number.');
+// } else {
+//     alert('Invalid Input');
+// }
+
+
+
+// 2
+// var firstNo = +prompt("Enter First Number:");
+// var secondNo = +prompt("Enter Second Number:");
+// if (firstNo > secondNo) {
+//     alert("Largest Number is " + firstNo);
+// } else if (secondNo > firstNo) {
+//     alert("Largest Number is " + secondNo);
+// } else {
+//     alert("Both Numbers are equal.");
+// }
+
+
+
+// 3
+// var number = +prompt("Enter a number:");
+// if (number > 0) {
+//     alert("The number is Positive.");
+// } else if (number < 0) {
+//     alert("The number is negative.");
+// } else if (number === 0) {
+//     alert("The number is Zero.");
+// } else {
+//     alert("Invalid input");
+// }
+
+
+// 4.
+// var char = prompt("Enter a Letter:");
+// if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+//     alert("True");
+// } else {
+//     alert("False");
+// }
+
+
+// 5.
+// var correctPassword = "hello";
+// var password = prompt("Enter Password:");
+// if (password === "") {
+//     password = prompt("Please Enter your Password.");
+// }
+// if (password === correctPassword) {
+//     alert("Correct! The password you entered matches the original password.");
+// } else {
+//     alert("Incorrect Password");
+// }
+
+
+// 6.
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// } else {
+// greeting = "Good evening";
+// }
+
+
+// 7.
+// var time = +prompt("Enter Time:");
+// if (time >= 0000 && time < 1200) {
+//     alert("Good Morning!");
+// } else if (time >= 1200 && time < 1700) {
+//     alert("Good Afternoon!");
+// } else if (time >= 1700 && time < 2100) {
+//     alert("Good Evening!");
+// } else if (time >= 2100 && time < 2359) {
+//     alert("Good Night!");
+// } else {
+//     alert("Invalid Input");
+// }
+
+
+
+
+// document.write('<h4>Arrays</h4>')
+
+// 1.
+// var arr = [];
+
+
+// 2.
+// var arr = new Array();
+
+
+// 3.
+// var str = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+
+// 4.
+// var no = [1, 2, 3, 4, 5];
+
+
+// 5.
+// var boolean = [true,false];
+
+
+// 6.
+// var mixed = ['a', 'b', 'c', 'd', 1, 2, 3, true];
+
+
+// 7.
+// var qualification = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil.', 'PhD'];
+// document.write('<br> 1) ' + qualification[0] + '<br> 2) ' + qualification[1] + '<br> 3) ' + qualification[2] + '<br> 4) ' + qualification[3] + '<br> 5) ' + qualification[4] + '<br> 6) ' + qualification[5] + '<br> 7) ' + qualification[6] + '<br> 8) ' + qualification[7]);
+// or
+// for (let i = 0; i < qualification.length; i++) {
+//     document.write('<br>' + (i+1) + ') ' + qualification[i])
+// }
+
+// 8.
+// var studentName = ['Michael', 'John' , 'Tony'];
+// var score = [320, 230, 480];
+// var totalMarks = 500;
+// var percentage = [score[0]/totalMarks*100, score[1]/totalMarks*100, score[2]/totalMarks*100,];
+// document.write('<br> Score of ' + studentName[0] + ' is ' + score[0] + '. Percentage: ' + percentage[0] + '%');
+// document.write('<br> Score of ' + studentName[1] + ' is ' + score[1] + '. Percentage: ' + percentage[1] + '%');
+// document.write('<br> Score of ' + studentName[2] + ' is ' + score[2] + '. Percentage: ' + percentage[2] + '%');
+
+
+// 9.
+// var colour = [];
+// var begColour = prompt('Enter the Colour at the Beginning:');
+// colour.unshift(begColour);
+// document.write(colour + '<br>');
+// var endColour = prompt('Enter the Colour at the End:');
+// colour.push(endColour);
+// document.write(colour + '<br>');
+// var begColour1 = prompt('Enter the Colour at the Beginning:')
+// colour.unshift(begColour1);
+// var begColour2 = prompt('Enter the Colour at the Beginning:')
+// colour.unshift(begColour2);
+// document.write(colour + '<br>');
+// colour.shift();
+// document.write(colour + '<br>');
+// colour.pop();
+// document.write(colour + '<br>');
+// var addIndex = +prompt('Enter the Index at you want to add Colour:');
+// var addColour = prompt('Enter the Colour at the desired index:');
+// colour.splice(addIndex, 0, addColour);
+// document.write(colour + '<br>');
+// var delIndex1 = +prompt('Enter the Index at from you want to delete:');
+// var delIndex2 = +prompt('Enter the Index to which you want to delete:');
+// colour.splice(delIndex1, delIndex2);
+// document.write(colour + '<br>');
+
+
+// 10.
+// var studentScore = [320, 230, 480, 120];
+// var orderedScore = [];
+// for (let i = 0; i < studentScore.length; i++) {
+//     if (studentScore[i-1] > studentScore[i]){
+//         orderedScore.unshift(studentScore[i])    
+//     } else {
+//         orderedScore.push(studentScore[i])
+//     }
+// }
+// document.write('Scores of Students : ' + studentScore)
+// document.write('<br>Ordered Scores of Students : ' + orderedScore)
+
+
+// 11.
+// var cities = ['Karachi', 'Lahore', 'Islamabad', 'Quetta', 'Peshawar'];
+// var selectedCities = [];
+// for (let i = 0; i< cities.length; i++) {
+//     selectedCities.push(cities[i]);
+//     if (selectedCities.length === 3) {
+//         break;
+//     }
+// }
+// document.write('<br> Cities List: <br>' + cities);
+// document.write('<br> Selected Cities List: <br>' + selectedCities);
+
+
+// 12.
+// var arr = ["This", "is", "my", "cat"];
+// document.write("<br>Array:<br>" + arr + "<br>");
+// or
+// var str = arr.join(" ");
+// document.write("<br>String:<br>" + str);
+
+
+// 13.
+// var device = ['keyboard', 'mouse', 'printer', 'monitor'];
+// document.write('Devices:<br>' + device + '<br>');
+// for (let i = 5; i > device.length; i--) {
+//     document.write('<br>Out:<br>');
+//     document.write(device.shift());
+//     if (device.length === 0) {
 //         break;
 //     }
 // }
 
 
-// === Task# 14
+// 14.
+// var device = ['keyboard', 'mouse', 'printer', 'monitor'];
+// document.write('Devices:<br>' + device + '<br>');
+// for (let i = 5; i > device.length; i--) {
+//     document.write('<br>Out:<br>');
+//     document.write(device.pop());
+//     if (device.length === 0) {
+//         break;
+//     }
+// }
+
+
+// 15.
+// var phoneManufactures = ['Apple', 'Samsung', 'Motorola', 'Nokia', 'Sony', 'Haier'];
+// document.write("<select name='' id=''>");
+// for (let i = 0; i < phoneManufactures.length; i++) {
+//     var phone = phoneManufactures[i];
+//     document.write("<option value=''>"+phone+"</option>")
+// }
+// document.write("</select>");
+
+
+
+
+// 1.
+// var multidimentionalArray = [array1, array2, array3];
+// var array1 = [];
+// var array2 = [];
+// var array3 = [];
+
+
+// 2.
+// var array1 = [0,1,2,3];
+// var array2 = [1,0,1,2];
+// var array3 = [2,1,0,1];
+// var multidimentionalArray = [array1, array2, array3];
+// for (let i = 0; i < multidimentionalArray.length; i++) {
+//     document.write(multidimentionalArray[i] +"<br>");
+// };
+
+
+// 2.
+// for (let i = 1; i <= 10; i++) {
+//      document.write(i + '<br>')
+// };
+
+
+// 3.
+// var table = +prompt('Enter a number to show its multiplication table:');
+// var tablelength = +prompt('Enter length of multiplication table:')
+// document.write('Multiplication table of ' + table + '<br>Length ' + tablelength);
+// for (let i = 1; i <= tablelength; i++) {
+//     document.write('<br>' + table + ' x ' + i + ' = ' + table*i);
+// };
+
+
+// 4.
+// var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+// for (let i = 0; i < fruits.length; i++) {
+//     document.write(fruits[i] + '<br>');
+// };
+// for (let i = 0; i < fruits.length; i++) {
+//     document.write('<br>Element at index ' + i + ' is ' + fruits[i]);    
+// };
+
+
+// 5.
+// document.write('<strong>Counting:</strong><br><br>');
+// for (let i = 0; i <= 15; i++) {
+//     document.write(i + ', ');
+// };
+// document.write('<br><br><strong>Reverse counting:</strong><br><br>');
+// for (let i = 10; i >= 1; i--) {
+//     document.write(i + ', ');
+// };
+// document.write('<br><br><strong>Even:</strong><br><br>');
+// for (let i = 0; i <= 20; i++) {
+//     if (i%2 !== 0) {
+//         continue;
+//     };
+//     document.write(i + ', ');
+// };
+// document.write('<br><br><strong>Odd:</strong><br><br>');
+// for (let i = 0; i <= 20; i++) {
+//     if (i%2 === 0) {
+//         continue;
+//     };
+//     document.write(i + ', ');
+// };
+// document.write('<br><br><strong>Series:</strong><br><br>');
+// for (let i = 2; i <= 20; i++) {
+//     if (i%2 !== 0) {
+//         continue;
+//     };
+//     document.write(i + 'k, ');
+// };
+
+
+// 7.
 // var search = prompt("Welcome to ABC Bakery. What do you want to order Sir/Ma'am?");
 // var A = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
 // var matchFound = false;
 // for (let i = 0; i < A.length; i++) {
-//     if (search.toLowerCase() === A[i]) {
+//     if (search === A[i]) {
 //         matchFound = true;
 //         document.write(search + ' is <strong>available</strong> at index ' + i + ' in our bakery')
 //     }
@@ -107,413 +846,29 @@
 // }
 
 
-// === Task# 15
-// var password = prompt('Enter Password:');
-// var letter;
-// document.write('Entered Password: ' + password);
-// if (password.length >= 6) {
-//     for (let i = 0; i < password.length; i++) {
-//         if (password[0] >= String.fromCharCode(48) && password[0] <= String.fromCharCode(57)) {
-//             document.write('<br>' + 'Password can not begin with a number');    
-//             if (password[i] >= String.fromCharCode(97) || password[i] <= String.fromCharCode(122) || password[i] >= String.fromCharCode(65) || password[i] >= String.fromCharCode(90)) {
-//                     console.log('Perfect Password');
-//                     break;
-//             } else {
-//                 alert('No number or letter')
-//             }
-//             break;
-//         } else {
-//             console.log('No Number in front');
-//         }
-//         break;
-//     }
-// } else {document.write('<br>' + 'Password cannot be smaller than 6 digit.')}
-
-
-// === Task# 16
-// var university = 'University of Karachi';
-// var arr = university.split('');
-// console.log(arr);
-// for (let i = 0; i < arr.length; i++) {
-//     document.write(arr[i] + '<br>')
+// 8.
+// var a = [24, 53, 91, 78, 12];
+// var largestNo;
+// for (let i = 0; i < a.length; i++) {
+//    if (a[i-1] < a[i]) {
+//        largestNo = a[i];
+//    }
 // }
-
-
-// === Task# 17
-// var input = prompt('Enter:');
-// document.write('User Input: ' + input + '<br>' + 'Last Character of input: ' + input.slice(-1));
-
-
-// === Task# 18
-// var text = 'The quick brown fox jumps over the lazy dog';
-// var len = text.match(/the/gi);
-// document.write('Text: ' + text + '<br>' + 'The occurence of "the": ' + len.length);
-
-
-
-
-
-// ====== Chapter# 26-30
-
-// === Task# 1
-// var num = prompt('Enter a positive integer:');
-// if (num >= 0 ) {
-//     document.write('Number: ' + num + '<br>' + 'Round-off value: ' + Math.round(num) + '<br>' + 'Floor value: ' + Math.floor(num) + '<br>' + 'Ceil value: ' + Math.ceil(num))
-// } else {
-//     alert('Please a positive integer.')
-// }
-
-
-// === Task# 2
-// var num = prompt('Enter a negative integer:');
-// if (num <= 0 ) {
-//     document.write('Number: ' + num + '<br>' + 'Round-off value: ' + Math.round(num) + '<br>' + 'Floor value: ' + Math.floor(num) + '<br>' + 'Ceil value: ' + Math.ceil(num))
-// } else {
-//     alert('Please a negative integer.')
-// }
-
-
-// === Task# 3
-// var num = +prompt('Enter a number:');
-// document.write('The absolute value of ' + num + ' is ' + Math.abs(num));
-
-
-// === Task# 4
-// var random = Math.random();
-// var diceValue = (random * 6) + 1;
-// document.write('Random dice value: ' + Math.floor(diceValue));
-
-
-// === Task# 5
-// var bigDecimal = Math.random();
-// var coinValue = (bigDecimal*2) +1;
-// var numberOfSide = Math.floor(coinValue);
-// document.write(numberOfSide);
-// if (numberOfSide === 2) {
-//     document.write('<br>' + 'Random Coin Value: Heads')
-// } else {
-//     document.write('<br>' + 'Random Coin Value: Tails')
-// }
-
-
-// === Task# 6
-// var random = Math.random();
-// var num = (random*100) +1;
-// var improvedNum = Math.floor(num);
-// document.write('Random number between 1 and 100: ' + improvedNum);
-
-
-// === Task# 7
-// var weight = prompt('Enter your weight in kilograms:');
-// document.write('The weight of user is ' + weight.slice(0,2) +' kilograms');
-
-
-// === Task# 8
-// var random = Math.random();
-// var num = Math.floor((random*10) +1);
-// var guess = +prompt('Enter a number between 1 and 10');
-// if (guess === num) {
-//     alert('Congratulations! You guessed the right number.')
-// } else {
-//     alert('Try again!')
-// }
-
-
-
-
-
-// ====== Chapter# 31-34
-
-// === Task# 1
-// var current = new Date();
-// document.write(current);
-
-
-// === Task# 2
-// var current = new Date();
-// var index = current.getMonth();
-// var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-// document.write('Current month: ' + month[index]);
-
-
-// === Task# 3
-// var current = new Date();
-// document.write('Today is ' + current.toString().slice(0,3))
-
-
-// === Task# 4
-// var current = new Date();
-// var day = current.toString().slice(0,3);
-// if (day === 'Sun' || day === 'Sat') {
-//     document.write("It's Fun day")
-// } else {
-//     document.write("It's Work day")
-// }
-
-
-// === Task# 5
-// var current = new Date();
-// var date = current.getDate();
-// if (date <= 15) {
-//     document.write('First fifteen days of the Month')
-// } else {
-//     document.write('Last days of the Month')
-// }
-
-
-// === Task# 6
-// var current = new Date();
-// document.write('Current Date: ' + current);
-// document.write('<br>' + 'Elapsed milliseconds since January 1, 1970: ' + current.getTime());
-// document.write('<br>' + 'Elapsed minutes since January 1, 1970: ' + current.getTime()/60000);
-
-
-// === Task# 7
-// var current = new Date();
-// var time = current.getHours();
-// if (time >= 12) {
-//     document.write('Its PM')
-// } else {
-//     document.write('Its AM')
-// }
-
-
-// === Task# 8
-// var current = new Date(2020, 11, 31);
-// document.write('Later date: ' + current);
-
-
-// === Task# 9
-// var current = new Date();
-// var ramadan = new Date("2020, 04, 12");
-// var diffTime = Math.abs(current - ramadan);
-// var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-// console.log(diffTime + " milliseconds");
-// document.write(diffDays + " days have passed since 1st Ramadan, 2020")
-
-
-// === Task# 10
-// var beg = new Date("2020, 01, 01");
-// var refer = new Date("2020, 12, 05, 22:50:16");
-// var sec = Math.ceil((refer - beg)/(1000*60));
-// document.write('On reference date ' + refer + ', ' + sec + ' seconds had passed since beginning of 2015');
-
-
-// === Task# 11
-// var current = new Date();
-// document.write("Current date: " + current + "<br>")
-// var hour = current.getHours()-1;
-// current.setHours(hour);
-// document.write("1 hour ago, it was " + current);
-
-
-// === Task# 12
-// var current = new Date();
-// document.write("Current date: " + current + "<br>")
-// var years = current.getFullYear()-100;
-// current.setFullYear(years);
-// document.write("100 years back, it was " + current);
-
-
-// === Task# 13
-// var age = prompt('Enter your age:');
-// var current = new Date();
-// var birthYear = current.getFullYear() - age;
-// document.write("Your age is " + age + "<br>" + "Your Birth year is " + birthYear)
-
-
-// === Task# 14
-// var customerName = prompt('Enter Customer Name:');
-// var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-// var currentMonth = month[new Date().getMonth()];
-// var unitNo = +prompt('Enter Number of units:');
-// var charges = 16;
-// var lateAmount = 350;
-// var netAmount = unitNo*charges;
-// var grossPay = netAmount + lateAmount;
-// document.write('<h2>K-Electric Bill</h2>')
-// document.write('Customer Name: ' + '<strong>' + customerName + '</strong>' + '<br>' + 'Month: ' + '<strong>' + currentMonth + '</strong>' + '<br>' + 'Number of Units: ' + '<strong>' + unitNo + '</strong>' + '<br>' + 'Charges per unit: ' + '<strong>' + charges + '</strong>' + '<br>');
-// document.write('<br>' + 'Net Amount Payable (within Due Date): ' + '<strong>' + netAmount + '</strong>' + '<br>' + 'Late payment surcharge: ' + '<strong>' + lateAmount + '</strong>' + '<br>' + 'Gross Amount Payable (after Due Date): ' + '<strong>' + grossPay + '</strong>')
-
-
-
-
-
-// ====== Chapter# 35-38
-
-
-// === Task# 1
-// function time() {
-//     var now = new Date();
-//     document.write(now);
-// }
-// time();
-
-
-// === Task# 2
-// function greeting() {
-//     var firstName = prompt('Enter your First Name:');
-//     var lastName = prompt('Enter your Last Name:');
-//     var fullName = firstName.concat(' ',lastName)
-//     alert('Welcome! ' + fullName);
-// }
-// greeting();
-
-
-// === Task# 3
-// function add() {
-//     var num1 = +prompt('Enter First Number:');
-//     var num2 = +prompt('Enter Second Number:');
-//     var addition = document.write('Sum of Two Numbers are ' + (num1+num2));
-//     return addition;
-// }
-// add()
-
-
-// === Task# 4
-// function calculator(num1, num2, operator) {
-//     if (operator === '+') {
-//         return num1+num2
-//     } else if (operator === '-') {
-//         return num1-num2
-//     } else if (operator === '*') {
-//         return num2*num2
-//     } else if (operator === '/') {
-//         return num1/num2
-//     } else if (operator === '%') {
-//         return num1%num2
-//     } else {
-//         alert('Invalid input')
+// document.write('Array items: ' + a);
+// document.write('<br>The largest number is ' + largestNo)
+
+// 9.
+// var a = [24, 53, 78, 91, 12];
+// document.write('<br>Array items: ' + a);
+// for (let i = 1; i < a.length; i++) {
+//     if (a[i-1] > a[i]){
+//         document.write('<br>The smallest number is ' + a[i])
 //     }
 // }
-// document.write("Result: " + calculator(8,5,'+'));
 
 
-
-// === Task# 5
-// function square(num) {
-//     return num*num
+// 10.
+// var no = 5;
+// for (let i = 1; i <= 20; i++) {
+//     document.write(i*no + ', ')
 // }
-// document.write('Square of argument: ' + square(5));
-
-
-
-// === Task# 6
-// var num = +prompt('Enter number:');
-// function factorial(num) {
-//     var result = 0;
-//     for (let i = 0; i < num; i++) {
-//         result += num*i;
-//     }
-//     return result;
-// }
-// document.write('Factorial of ' + num + ' is ' + factorial(num))
-
-
-// === Task# 7
-// var start = +prompt('Enter Starting number:');
-// var end = +prompt('Enter Ending number:');
-// function counting(start,end) {
-//     var count = '';
-//     for (let i = start; i <= end; i++) {
-//         count += i + '.<br>';
-//     }
-//     return count;
-// }
-// document.write(counting(start,end))
-
-
-// === Task# 8
-// var base = +prompt('Enter Base:');
-// var perpendicular = +prompt('Enter Perpendicular:')
-// function calculateHypotenuse(base,perpendicular) {
-//     function calculateSquare(num1) {
-//         num1 = num1**2;
-//         return num1; 
-//     }
-    
-//     var result = calculateSquare(base) + calculateSquare(perpendicular);
-//     return result;
-// }
-// document.write('Calculated Hypotenuse of the following is: ' + calculateHypotenuse(base,perpendicular))
-
-
-// === Task# 9
-// function areaValues(width,height) {
-//     var result = width*height;
-//     return result;
-// }
-// var width = +prompt('Enter width:');
-// var height = +prompt('Enter height:');
-// function areaVariables(width,height) {
-//     var result = width*height;
-//     return result;
-// }
-// document.write('Area by values: ' + areaValues(2,5) + '<br>' + 'Area by variables: ' + areaVariables(width,height))
-
-
-// === Task# 10
-// var check = prompt('Enter:');
-// function checkPalindrome(word) {
-//     if (check === check.split('').reverse().join('')) {
-//         return 'The following is Palindrome.'
-//     } else {
-//         return 'The following is not Palindrome'
-//     }
-// }
-// document.write(checkPalindrome(check))
-
-
-// === Task# 11
-// function capitalize_String(string) {
-//     var str = string.split(" ");
-//     var longest = 0;
-//     var word = "";
-//     var first;
-//     for(let i = 0; i < str.length; i++) {
-//     first = str[i];
-//     word += first[0].toUpperCase() + first.slice(1) + " ";}
-//     return word;
-// }
-// document.write(capitalize_String('web development tutorial'))
-
-
-// === Task# 12
-// function longestWord(string) {
-//     var str = string.split(" ");
-//     var longest = 0;
-//     var word = null;
-//     for (var i = 0; i < str.length - 1; i++) {
-//         if (longest < str[i].length) {
-//             longest = str[i].length;
-//             word = str[i];
-//         }
-//     }
-//     return word;
-// }
-// document.write(longestWord('Web Development Tutorial'))
-
-
-// === Task# 13
-// function searchStr(str,letter) {
-//     var regex = new RegExp( letter, 'g' );
-//     var res = str.match(regex);
-//     return 'The occurence of the specified letter: ' + res.length;
-// }
-// document.write(searchStr('JSResourceS.com','o'))
-
-
-// === Task# 14
-// var radius = +prompt('Enter radius:')
-// function calcCircumference(num) {
-//     var circumference = 2*3.142*num;
-//     return 'The circumference is ' + circumference + ' cm.';
-// }
-// function calcArea(num) {
-//     var area = 3.14*(num**2);
-//     return 'The area is ' + area + ' cm<sup>2</sup>.';
-// }
-// document.write(calcCircumference(radius) + '<br>' + calcArea(radius))
-
-
-
