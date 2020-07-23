@@ -109,38 +109,24 @@
 
     <!-- Chapter #49-52 -->
     <!-- Task #1 -->
-    <!-- <form style="text-align: left; width: 1200px;" onsubmit="">
-        <fieldset style="width: fit-content; margin: 0 auto; background-color: lightgrey; padding: 20px;">
-            <legend>Personal information:</legend><br>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="number">Number:</label><br>
-        <input type="number" id="number" name="number"><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label>
-        <br>
-        <input type="submit" value="Submit">
-        </fieldset>
-      </form>
-      <div id="display">
-          <label for="fname">Full Name:</label>
-          <p></p>
-          <label for="email">Email Address:</label>
-          <p></p>
-          <label for="gender">Gender:</label>
-          <p></p>
-          <label for="number">Number:</label>
-          <p></p>
-          
-      </div> -->
+    <!-- <div>
+        <h1> Form </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <input type="button" value="Submit" onclick="submit()">
+        </div>
+        <div id="main-content" class="content" style="display:none">
+        <p class="render"></p>
+        <p class="render"></p>
+        <p class="render"></p>
+        </div>
+    </div> -->
+    
 
     <!-- Task #2 -->
     <!-- <p id="lorem">
@@ -148,10 +134,60 @@
         <a href="javascript:void(0);" onClick="moreLorem();"><em>Click for more.</em></a>
     </p> -->
 
+    <!-- Task #3 -->
+    <form>
+        <label for="first-name">First Name: </label>
+        <input type="text" id="first-name">
+        <label for="class-name">Class Name: </label>
+        <input type="text" id="class-name">
+        <input type="button" value="Submit" onclick="submit()">
+    </form>
+    <table id="myTable">
+        <tr>
+            <td>Index</td>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>
+    </table>
+    <script>
+        
+    </script>
+    <!-- <table id="table">
+        <tr>
+            <td>Index</td>
+            <td>Name</td>
+            <td>Class</td>
+        </tr>
+        <tr id="1">
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="del(this)">Delete</button></td>
+        </tr>
+    </table> -->
+
         
     <!-- Chapter #58-67 -->
     <!-- Task #1 -->
-<!--     <div style="text-align: justify;">
+    <!-- <div style="text-align: justify;">
         <h1> DOM </h1>
         <div id="form-content" class="content"> <label for="first-name">First Name</label> <input type="text" id="first-name"><br><br><label for="last-name">Last Name</label> <input type="text" id="last-name"><br><br><label for="email">Email</label> <input type="email" name="email" id="email"> </div><div id="main-content" class="content"> <p class="render">First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan</p><p class="render"> Contact : +92 300 1234567</p></div>
     	<button onclick="ans1()">Answers 1</button>
@@ -169,7 +205,7 @@
     </div>
     
     <script>
-        p = document.getElementById('answers');
+        varp = document.getElementById('answers');
         function ans1() {
             var main = document.getElementById('main-content');
             var txt = main.nodeName;
@@ -203,10 +239,10 @@
             var input2 = prompt('Enter Email:'); 
             para[2].innerHTML = "Email: " + input2;
         }
-    </script>
- -->
+    </script> -->
+
     <!-- Task #2 -->
-<!--     <script>
+    <!-- <script>
     function ans6() {
             var form = document.getElementById('form-content');
             var txt = form.nodeType;

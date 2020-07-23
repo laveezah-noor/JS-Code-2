@@ -43,6 +43,8 @@ img{
 }
 </style>
 <body>
+  <!-- Chapter #53-58 -->
+  <!--Task #1  -->
 <div>
   <img src="8.jpg" alt="" id="img1" onclick="myFunction(this)">
   <img src="10.jpg" alt="" id="img2" onclick="myFunction(this)">
@@ -51,7 +53,6 @@ img{
 
   <div id="modal" class="modal">
 
-    <!-- Modal content -->
     <div class="modal-content" id="myModal">
       <span class="close">&times;</span>
       <img id="img">
@@ -81,11 +82,28 @@ function myFunction(object) {
   img.src = document.getElementById(object.id).src;
   img.style.width = "600px";
   img.style.height = "400px";
-}
+} 
+ </script>
 
-
-
-
+<!-- Task #2 -->
+<div>
+  <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi molestiae aut voluptas ullam maxime, aliquid voluptatibus pariatur? Dicta maxime dolor corrupti, quas aut iusto nemo nisi fugiat adipisci? Harum officiis molestiae numquam fuga, distinctio nemo dolore veniam eius pariatur laboriosam iusto recusandae incidunt deserunt et rerum sed magnam exercitationem totam? Commodi maiores sapiente aperiam qui similique atque aut doloribus perferendis dignissimos sunt quis nisi optio, eius rerum assumenda numquam fugit. Nam saepe est excepturi veniam, recusandae quisquam inventore ab cupiditate qui natus illo tenetur praesentium velit magnam, magni id autem porro. Numquam, quis. Dolor laborum, nam cumque fugit perspiciatis cupiditate?</p>
+  <button id="in">+</button><button id="out">-</button>
+</div>
+<script>
+  var par = document.getElementById('para');
+  var zoomin = document.getElementById('in');
+  var zoomout = document.getElementById('out');
+  var font = 15;
+  par.style.fontSize = font+"px";
+  zoomin.onclick = function(){
+    font = font + 10;
+    par.style.fontSize = font+"px";
+  }
+  zoomout.onclick = function(){
+    font = font - 10;
+    par.style.fontSize = font+"px";
+  }
 </script>
 
 </body>

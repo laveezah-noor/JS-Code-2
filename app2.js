@@ -203,18 +203,12 @@
 
 // === Chapter #49-52
 // === Task #1
-// var displays = document.getElementById('display');
-// function submit() {
-//     var fname = document.getElementById('fname').value;
-//     var lname = document.getElementById('lname').value;
-//     var email = document.getElementById('email').value;
-//     var number = document.getElementById('number').value;
-    
-//     displays.style.display = "block";
-//     var para = displays.getElementsByTagName('p');
-//     para[0].innerHTML = fname + ' ' +lname;
-//     para[1].innerHTML = email;
-//     para[3].innerHTML = number;
+// function submit(){
+// document.getElementById("main-content").style.display = "block";
+//   var p = document.getElementsByClassName("render");
+//   p[0].innerHTML = "First Name: " + document.getElementById("first-name").value;
+//   p[1].innerHTML = "Last Name: " + document.getElementById("last-name").value;
+//   p[2].innerHTML = "Email Address: " + document.getElementById("email").value;
 // }
 
 // === Task #2
@@ -223,6 +217,89 @@
 //     document.getElementById("lorem").innerHTML = expandedParagraph;
 //     }
 
+// === Task #3
+var count = 0;
+  var x = document.createElement("TR");
+  x.setAttribute("id", "tr");
+  document.getElementById("myTable").appendChild(x);
 
+  var i = document.createElement("TD");
+  var index = document.createTextNode("Index");
+  i.appendChild(index);
+  document.getElementById("tr").appendChild(i);
+  var n = document.createElement("TD");
+  var name = document.createTextNode("Name");
+  n.appendChild(name);
+  document.getElementById("tr").appendChild(n);
+  var c = document.createElement("TD");
+  var classNo = document.createTextNode("Class");
+  c.appendChild(classNo);
+  document.getElementById("tr").appendChild(c);
+  
+  var x = document.createElement("TR");
+  x.setAttribute("id", "tr");
+  document.getElementById("myTable").appendChild(x);
+
+function submitAgain() {
+    var x = document.createElement("TR");
+    x.setAttribute("id", "tr");
+    document.getElementById("myTable").appendChild(x);
+  
+    var i = document.createElement("TD");
+    var index = document.createTextNode(count);
+    i.appendChild(index);
+    document.getElementById("tr").appendChild(i);
+    var n = document.createElement("TD");
+    var fname = document.getElementById("first-name").value;
+    var name = document.createTextNode(fname);
+    n.appendChild(name);
+    document.getElementById("tr").appendChild(n);
+    var c = document.createElement("TD");
+    var cname = document.getElementById("class-name").value;
+    var classNo = document.createTextNode(cname);
+    c.appendChild(classNo);
+    document.getElementById("tr").appendChild(c);
+    
+    var x = document.createElement("TR");
+    x.setAttribute("id", "tr");
+    document.getElementById("myTable").appendChild(x);
+  }
+function submit() {
+    count+=1;
+    document.getElementById("myTable").style.display = "block";
+    for (let i = 0; i < count; i++) {
+        submitAgain();
+        
+    }
+}
+
+
+var count = 0;
+var x,y,index,name,classNo,add,del;
+var fname = document.getElementById('first-name');
+var cname = document.getElementById('class-name');
+function submit() {
+count +=1;
+  x = document.createElement("TR");
+  x.setAttribute("id", "myTr");
+  document.getElementById("myTable").appendChild(x);
+  
+     y = document.createElement("TD");
+     index = document.createTextNode(count);
+     y.appendChild(index);
+     document.getElementById("myTr").appendChild(y);
+     name = document.createTextNode(fname.value);
+     y.appendChild(name);
+     document.getElementById("myTr").appendChild(y);
+     classNo = document.createTextNode(cname.value);
+     y.appendChild(classNo);
+     document.getElementById("myTr").appendChild(y);
+     add = document.createElement('button');
+     y.appendChild(add);
+     document.getElementById("myTr").appendChild(y);
+     del = document.createElement('button');
+     y.appendChild(del);
+     document.getElementById("myTr").appendChild(y);
+}
 
   
